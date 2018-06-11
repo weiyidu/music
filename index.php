@@ -5,7 +5,7 @@
  *
  * @author  MaiCong <i@maicong.me>
  * @link    https://github.com/maicong/music
- * @since   1.5.9
+ * @since   1.6.0
  *
  */
 
@@ -13,7 +13,7 @@
 define('MC_CORE', true);
 
 // 定义版本
-define('MC_VERSION', '1.5.9');
+define('MC_VERSION', '1.6.0');
 
 // 核心文件目录
 define('MC_CORE_DIR', __DIR__ . '/core');
@@ -29,6 +29,9 @@ define('MC_PROXY', false);
 
 // Curl 代理用户名和密码，例如：define('MC_PROXYUSERPWD', 'username:password')
 define('MC_PROXYUSERPWD', false);
+
+// 服务器是否在国内
+define('MC_INTERNAL', 0);
 
 // PHP 版本判断
 if (version_compare(phpversion(), '5.4', '<')) {
